@@ -113,7 +113,6 @@ async function main(){
                     offset:(parseInt(message.offset) + 1).toString() 
                 }
             ])
-            
         }
     })
 }
