@@ -7,6 +7,7 @@ exports.ZapCreateSchema = zod_1.z.object({
     triggerMetadata: zod_1.z.any().optional(),
     actions: zod_1.z.array(zod_1.z.object({
         availableActionId: zod_1.z.string(),
-        actionMetadata: zod_1.z.any().optional()
+        actionMetadata: zod_1.z.any().optional(),
+        sortingOrder: zod_1.z.number()
     }))
 });

@@ -118,7 +118,7 @@ router.post("/signin", (req, res) => __awaiter(void 0, void 0, void 0, function*
         return;
     }
 }));
-router.get("/user", middleware_1.authMiddleware, (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+router.get("/", middleware_1.authMiddleware, (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     var _a;
     try {
         const email = (_a = req.user) === null || _a === void 0 ? void 0 : _a.email;
