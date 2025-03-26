@@ -70,7 +70,7 @@ router.post("/signup", (req, res) => __awaiter(void 0, void 0, void 0, function*
         });
     }
 }));
-router.post("/signin", (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+router.post("/login", (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     try {
         const response = usertype_1.SignInSchema.safeParse(req.body);
         if (response.error) {
